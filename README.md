@@ -9,21 +9,26 @@ Business Analysis: Use SQL to answer specific business questions and derive insi
 # 1. Database Setup
 Database Creation: The project starts by creating a database named p1_retail_db.
 Table Creation: A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
-CREATE DATABASE p1_retail_db;
+use sql_project_p2;
 
-CREATE TABLE retail_sales
-(
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,	
-    sale_time TIME,
-    customer_id INT,	
-    gender VARCHAR(10),
-    age INT,
-    category VARCHAR(35),
-    quantity INT,
-    price_per_unit FLOAT,	
-    cogs FLOAT,
-    total_sale FLOAT
+drop table if exists retail_sales;
+
+
+select * from retail_sales
+;
+
+Create table retail_sales (
+transactions_id INT PRIMARY KEY,	
+sale_date	DATE,
+sale_time	TIME,
+customer_id	INT,
+gender	VARCHAR(25),
+age	int,
+category VARCHAR(25),	
+quantiy	INT,
+price_per_unit	Float,
+cogs	float,
+total_sale Float
 );
 # 2. Data Exploration & Cleaning
 Record Count: Determine the total number of records in the dataset.
