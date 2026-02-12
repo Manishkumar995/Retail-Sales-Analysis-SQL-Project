@@ -1,6 +1,6 @@
 **The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.**
 
-## Objectives
+## Objective-
 
 1. **Set up a retail sales database**: Create and populate a retail sales database with the provided sales data.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
